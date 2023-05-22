@@ -5,6 +5,7 @@
 
 html {
     width: 100vw;
+    box-sizing: border-box;
 }
 
 :root {
@@ -27,6 +28,7 @@ body {
     max-width: 1440px;
     padding-left: 30px;
     padding-right: 30px;
+    box-sizing: border-box;
 }
 
 .global-container {
@@ -95,7 +97,7 @@ body {
     gap: 30px;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .activites-cards .card {
@@ -112,6 +114,7 @@ body {
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .activites-cards .card-content {
@@ -195,7 +198,7 @@ footer li > a {
 .populaires-cards {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: space-between;
 }
 
 .populaires-cards .card {
@@ -208,6 +211,7 @@ footer li > a {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover
 }
 
 .populaires-cards .card-content {
@@ -253,12 +257,12 @@ footer li > a {
     gap: 30px;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hebergements-cards .card {
     margin-top: 30px;
-    min-width: 160.33px;
+    min-width: 150.33px;
     width: 27%;
 }
 
@@ -267,6 +271,7 @@ footer li > a {
     height: 114px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover
 }
 
 .hebergements-cards .card-content {
@@ -351,7 +356,7 @@ header {
     padding-top: 30px;
 }
 
-.header-button-active {
+.header-button:hover {
     border-top: solid 2px #0065FC !important;
     color: #0065FC !important;
 }
@@ -399,6 +404,11 @@ header {
     line-height: 21px;
     text-align: center;
     width: 195px;
+}
+
+.search-input::placeholder {
+    color: black;
+    opacity: 1;
 }
 
 .search-button {
@@ -496,7 +506,7 @@ header {
     .populaires-cards .card {
         width: 30%;
         justify-content: space-between;
-        min-width: 190.67px;
+        min-width: 185.67px;
     }
 
     .populaires-cards .card-title {
@@ -571,7 +581,7 @@ header {
         border-bottom: solid 2px #D9D9D9;
     }
 
-    .header-button-active {
+    .header-button:hover {
         border-top: none !important;
         border-bottom: solid 2px #0065FC;
     }
@@ -592,7 +602,7 @@ header {
 
     .filter-button {
         font-size: 15px;
-        min-width: 160px;
+        min-width: 46%;
     }
 
     .populaires {
@@ -604,7 +614,6 @@ header {
     .populaires-cards .card {
         width: 100%;
         margin-top: 15px;
-        max-width: 400px;
     }
 
     .hebergements {
@@ -622,7 +631,6 @@ header {
     .hebergements-cards .card {
         width: 100%;
         margin-top: 15px;
-        max-width: 400px;
     }
 
     .hebergements-and-populaires section {
@@ -641,7 +649,6 @@ header {
     .activites-cards .card {
         margin-top: 0px;
         width: 100%;
-        max-width: 400px;
     }
 
     .activites-cards img {
@@ -663,13 +670,13 @@ header {
 
     .search-button {
         border-radius: 15px 15px 15px 15px;
-        width: 50px;
+        width: 60px;
         padding-right: 5px;
         margin-left: -20px;
     }
 
     .search-input {
-        width: auto;
+        width: 100% !important;
         text-align: left;
         padding-left: 20px;
     }
