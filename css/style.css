@@ -4,7 +4,6 @@
 }
 
 html {
-    width: 100vw;
     box-sizing: border-box;
 }
 
@@ -695,7 +694,7 @@ header {
         width: 0;
         height: 0;
         visibility: hidden;
-        display: inline-block;
+        display: none;
     }
 
     .info-container {
