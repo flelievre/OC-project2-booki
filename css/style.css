@@ -498,13 +498,12 @@ header {
     .populaires-cards {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         gap: 10px;
     }
 
     .populaires-cards .card {
         width: 30%;
-        justify-content: space-between;
-        min-width: 185.67px;
     }
 
     .populaires-cards .card-title {
